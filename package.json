@@ -1,0 +1,15 @@
+{
+  "name": "simple-api",
+  "version": "1.0.0",
+  "description": "simple API to test VSTS release deployments and swap slots",
+  "main": "index.js",
+  "author": "Guy Harwood",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "scripts": {
+    "start": "node ./index.js"
+  }
+}
