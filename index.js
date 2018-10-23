@@ -4,10 +4,9 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const packageFile = require('./package.json')
 // APPSETTING_SLOT is an Azure defined environment variable
-const azureSlot = process.env.APPSETTING_SLOT || 'APPSETTING_SLOT not defined'
-const instance = process.env.APP_INSTANCE || 'unknown'
+const azureSlot = process.env.SLOT || 'SLOT environment variable not defined'
 const version = packageFile.version
-const apiInfo = `simple-api v${version} running in azure slot:${azureSlot}, instance:${instance}`
+const apiInfo = `simple-api v${version} running in azure slot:${azureSlot}`
 
 const app = express()
 app.use(bodyParser.json())
