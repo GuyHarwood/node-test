@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 const packageFile = require('./package.json')
 const slot = process.env.SLOT || 'default'
 const version = packageFile.version
-const apiInfo = `api v${version} running in slot:${slot}`
+const apiInfo = `simple-api v${version} running in slot:${slot}`
 
 const app = express()
 app.use(bodyParser.json())
