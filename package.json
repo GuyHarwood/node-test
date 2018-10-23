@@ -1,6 +1,6 @@
 {
   "name": "simple-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple API to test VSTS release deployments and swap slots",
   "main": "index.js",
   "author": "Guy Harwood",
