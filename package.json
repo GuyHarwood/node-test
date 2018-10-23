@@ -10,7 +10,8 @@
     "express": "^4.16.4"
   },
   "scripts": {
-    "start": "node ./index.js"
+    "start": "node ./index.js",
+    "lint": "standard"
   },
   "devDependencies": {
     "standard": "^12.0.1"
