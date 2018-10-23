@@ -2,13 +2,17 @@
 
 const express = require('express')
 const bodyParser = require('body-parser')
-const app = express()
+const packageFile = require('./package.json')
+const slot = process.env.SLOT || 'default'
+const version = packageFile.version
+const apiInfo = `api v${version} running in slot:${slot}`
 
+const app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/', function (req, res) {
-  res.status(200).send('Welcome to the restful API v1.0.1')
+  res.status(200).send(apiInfo)
 })
 
 const server = app.listen(3000, function () {
