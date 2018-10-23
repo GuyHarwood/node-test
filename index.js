@@ -3,7 +3,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const packageFile = require('./package.json')
-const slot = process.env.SLOT || 'default'
+const slot = process.env.APPSETTING_SLOT || 'APPSETTING_SLOT not defined'
 const version = packageFile.version
 const apiInfo = `simple-api v${version} running in slot:${slot}`
 
